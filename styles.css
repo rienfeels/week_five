@@ -1,9 +1,20 @@
 body {
   background-image: linear-gradient(
-    270deg,
-    rgb(83, 83, 206) 40%,
-    rgb(41, 144, 185) 60%
+    to right top,
+    #4c84d5,
+    #459bda,
+    #58b0db,
+    #79c2da,
+    #9ed3db,
+    #a1d2d5,
+    #a5d0d0,
+    #a9cecb,
+    #8bbbb7,
+    #6da9a4,
+    #4e9691,
+    #28847f
   );
+
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -39,7 +50,7 @@ h2 {
   display: flex;
   justify-content: center;
   color: white;
-  font-family: fantasy;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .search-container {
@@ -106,7 +117,7 @@ div {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  color: aquamarine;
+  color: black;
 }
 
 div img,
@@ -134,7 +145,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  color: aquamarine;
+  color: black;
   width: 100%;
 }
 
@@ -164,8 +175,30 @@ form {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
+button {
+  padding: 1rem 2rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0);
+  color: blueviolet;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid blueviolet;
+  border-right: 2px solid blueviolet;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  transition-duration: 1s;
+  transition-property: border-top, border-left, border-bottom, border-right,
+    box-shadow;
+}
 
-/* === removing default button style ===*/
+button:hover {
+  border-top: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(238, 103, 238);
+  border-right: 2px solid rgb(238, 103, 238);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px;
+}
+/* === removing default button style ===
 .button2 {
   margin: 0;
   height: auto;
@@ -176,7 +209,7 @@ form {
 }
 
 /* button styling */
-.button2 {
+/* .button2 {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #37ff8b;
@@ -189,9 +222,9 @@ form {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
-}
+} */
 /* this is the text, when you hover on button */
-.button2 .hover-text2 {
+/* .button2 .hover-text2 {
   position: absolute;
   box-sizing: border-box;
   content: attr(data-text);
@@ -202,9 +235,9 @@ form {
   overflow: hidden;
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
-}
+} */
 /* hover */
-.button2:hover .hover-text2 {
+/* .button2:hover .hover-text2 {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
@@ -251,7 +284,7 @@ button::after {
 button:hover::after {
   animation: 1s glitch;
   animation-timing-function: steps(2, end);
-}
+} */
 
 @keyframes glitch {
   0% {
@@ -309,8 +342,7 @@ button:hover::after {
     transform: translate(0);
   }
 }
-
-.main_back {
+*/ .main_back {
   position: absolute;
   border-radius: 10px;
   transform: rotate(90deg);
